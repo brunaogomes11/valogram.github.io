@@ -1,0 +1,95 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d63e3e;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#imageContainer {
+    background-image: url("../images/celularImage.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35%;
+    padding: 5%;
+}
+
+#imageContainer img{
+    width: 100%;
+    margin: 10%;
+}
+
+#formLogin {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginField {
+    margin: 20px 0;
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(95, 65, 65);
+    border-radius: 5px 0px 5px 0px;
+    font-family: Lobster Two;
+    font-style: italic;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.formButton {
+    padding: 10px;
+    font-family: Nova Flat;
+    font-size: 1.2em;
+    background-color: rgb(255, 166, 0);
+    border: 0;
+    border-radius: 0 5px;
+}
+
+#rodape {
+    margin: 25px;
+}
+
+#rodape ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+#rodape a {
+    text-decoration: none;
+    padding: 0 5px;
+    color: black;
+}
+
+#rodape ul li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    #page {
+        height: 100vh;
+    }
+    #imageContainer {
+        display: none;
+    }
+}
